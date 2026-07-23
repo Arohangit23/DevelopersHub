@@ -227,7 +227,20 @@ const NavBar = () => {
             </div>
           ) : (
             /* Login/Register buttons for non-authenticated users */
-           <div></div>
+            <div className="flex items-center space-x-4">
+              <Link 
+                to="/login" 
+                className="text-gray-300 hover:text-white font-medium transition-colors duration-200"
+              >
+                Login
+              </Link>
+              <Link 
+                to="/login" 
+                className="px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-200 transition-colors duration-200 text-sm font-medium"
+              >
+                Sign Up
+              </Link>
+            </div>
           )}
         </div>
       </div>
